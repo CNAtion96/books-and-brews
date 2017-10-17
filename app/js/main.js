@@ -4,9 +4,9 @@
 
     angular
         .module('books-brews', ['ui.router'])
-        .config(function($stateProvider, $urlRouterProvider){
+        .config(function($stateProvider, $urlRouterProvider, $locationProvider){
         
-            $urlRouterProvider.otherwise('/')
+            $locationProvider.html5Mode(true);
             $stateProvider
                 .state('home', {
                     url: '/',

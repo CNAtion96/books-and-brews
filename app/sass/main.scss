@@ -22,6 +22,11 @@ body {
         }
     }
 
+    .carouselImg{
+        width: 100%;
+        height: 75%;
+    }
+
     .googleCalendar{
         position: relative;
         height: 0;
@@ -114,8 +119,13 @@ body {
     @media only screen and (max-width: 991px) {
         .mainContainer{
             .navbar {
-            z-index: 99;
+                position: fixed;
+                z-index: 99;
+            }
         }
+        .carouselImg{
+            width: 100%;
+            height: 50%;
         }
     }
 }

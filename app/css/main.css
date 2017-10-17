@@ -1,0 +1,68 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background-color: #efefef; }
+  body .mainContainer {
+    padding: 0px;
+    background: url("../img/bgImage.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    overflow-y: scroll;
+    height: 100vh; }
+    body .mainContainer .navbar {
+      background-color: white !important; }
+      body .mainContainer .navbar .nav-item {
+        cursor: pointer; }
+  body .googleCalendar {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%; }
+    body .googleCalendar iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  body .menu {
+    text-align: center; }
+    body .menu .menuCategory {
+      font-weight: bold; }
+  body .about .aboutImage img {
+    width: 100%; }
+  body .about .aboutText p {
+    word-wrap: break-word !important; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body .textHeading {
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  body h1 {
+    font-size: 4em; }
+  body .headerUpper {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1; }
+  body .headerLower {
+    font-size: 1.2em;
+    line-height: 1; }
+  body .textExpanded {
+    letter-spacing: 2px; }
+  body .textShadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+  body .textLg {
+    font-size: 1.25em; }
+  body .backgroundFaded {
+    background-color: rgba(255, 255, 255, 0.9); }
+  body .backgroundOverlay {
+    background-color: rgba(0, 0, 0, 0.7); }
+  body hr.divider {
+    border-color: #292b2c;
+    max-width: 250px; }
+  body .map-container iframe {
+    pointer-events: none; }
+  body .map-container iframe.clicked {
+    pointer-events: auto; }
+  @media only screen and (max-width: 991px) {
+    body .mainContainer .navbar {
+      z-index: 99; } }

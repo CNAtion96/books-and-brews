@@ -1,0 +1,121 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #efefef;
+
+    .mainContainer{
+        padding: 0px;
+        background: url('../img/bgImage.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        overflow-y: scroll;
+        height: 100vh;
+
+        .navbar{
+            background-color: white !important;
+            .nav-item{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .googleCalendar{
+        position: relative;
+        height: 0;
+        width: 100%;
+        padding-bottom: 100% ;
+        
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .menu{
+        text-align: center;
+        .menuCategory{
+            font-weight: bold;
+        }
+    }
+    
+    .about{
+        .aboutImage{
+
+            img{
+                width: 100%;
+            }
+        }
+        .aboutText{
+            p{
+                word-wrap: break-word !important;
+            }
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6, .textHeading {
+        font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+         font-size: 4em;
+    }
+
+    .headerUpper {
+        font-size: 5em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .headerLower {
+        font-size: 1.2em;
+        line-height: 1;
+    }
+
+    .textExpanded {
+        letter-spacing: 2px;
+    }
+
+    .textShadow {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .textLg {
+        font-size: 1.25em;
+    }
+
+    .backgroundFaded {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .backgroundOverlay {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    hr.divider {
+        border-color: #292b2c;
+        max-width: 250px;
+    }
+
+    .map-container iframe {
+        pointer-events: none;
+    }
+
+    .map-container iframe.clicked {
+        pointer-events: auto;
+    }
+
+
+    @media only screen and (max-width: 991px) {
+        .mainContainer{
+            .navbar {
+            z-index: 99;
+        }
+        }
+    }
+}
